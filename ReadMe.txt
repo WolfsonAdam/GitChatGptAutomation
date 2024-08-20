@@ -1,0 +1,1 @@
+this project will show basic understanding of using git git hub automation and catgptapi 
