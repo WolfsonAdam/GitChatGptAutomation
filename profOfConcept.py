@@ -13,9 +13,9 @@ message = input("User : ")
 messages.append(
             {"role": "user", "content": message},
         )
-completion = client.completions.create(model='gpt-3.5-turbo',prompt=messages)
+completion = client.chat.completions.create(model='gpt-3.5-turbo',messages=messages)
 
-reply = completion.choices[0].message.content
+reply = completion.choices[0].message
 print(f"ChatGPT: {reply}")
 f.close()
 
